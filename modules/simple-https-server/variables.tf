@@ -16,14 +16,3 @@ variable "region" {
     type        = string
     nullable = false
 }
-
-variable "environment" {
-    description = "The environment for the deployment (e.g., dev, staging, prod)"
-    type        = string
-    nullable = false
-}
-
-variable "server_name" {
-  description = "Name of a server"
-  type = string
-}

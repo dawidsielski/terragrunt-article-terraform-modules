@@ -63,7 +63,7 @@ resource "aws_instance" "web_server" {
               sudo yum install -y httpd
               sudo systemctl start httpd
               sudo systemctl enable httpd
-              echo "Hello, user! It is ${var.environment} - ${var.server_name} server!" > /var/www/html/index.html
+              echo "Hello, user! It is ${var.prefix} server!" > /var/www/html/index.html
             EOF
 
   tags = {
